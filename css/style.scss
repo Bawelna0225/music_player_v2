@@ -51,7 +51,7 @@ body {
 			transparent 12px,
 			transparent 32px
 		),
-		linear-gradient(90deg, rgb(17, 17, 17), rgb(66, 66, 66));
+		linear-gradient(90deg, rgb(66, 66, 66), rgb(17, 17, 17));
 	color: white;
 	height: 100vh;
 	display: flex;
@@ -74,12 +74,12 @@ i {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		transform: skewY(5deg);
+		transform: skewY(10deg);
 	}
 	.img,
 	.details,
 	.controls {
-		box-shadow: 0px 0px 5px rgba(9, 9, 9, 0.407);
+		filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.387));
 		border-radius: 4px;
 		background-color: rgba(18, 18, 18, 0.783);
 		width: 300px;
@@ -159,7 +159,8 @@ i {
 		justify-content: space-around;
 	}
 	.music-list {
-		transform: skewY(-3deg);box-shadow: 0px 0px 5px rgba(9, 9, 9, 0.407);
+		transform: skewY(-5deg);
+		filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.387));
 		display: flex;
 		flex-direction: column;
 		background-color: rgba(22, 22, 22, 0.73);
@@ -249,21 +250,21 @@ i {
 }
 .playing-anim {
 	user-select: none;
-    width: 25px;
-    height: 1px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 2px;
+	width: 25px;
+	height: 1px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	gap: 2px;
 	margin-top: 40px;
-    @for $i from 1 to 5 {
-      .bar__#{$i} {
-        width: calc(20px / 4);
-        height: 100%;
-        background-color: white;
-      }
-    }
-  }
+	@for $i from 1 to 5 {
+		.bar__#{$i} {
+			width: calc(20px / 4);
+			height: 100%;
+			background-color: white;
+		}
+	}
+}
 .playing-anim {
 	@for $i from 1 to 5 {
 		.bar__#{$i} {
