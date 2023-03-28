@@ -10,7 +10,7 @@ const wrapper = document.querySelector('.wrapper'),
 	progressBar = progressArea.querySelector('.progress-bar'),
 	musicList = wrapper.querySelector('.music-list'),
 	moreMusicBtn = wrapper.querySelector('#more-music'),
-	closeMoreMusic = musicList.querySelector('#close'),
+	// closeMoreMusic = musicList.querySelector('#close'),
 	container = document.getElementById('container'),
 	canvas = document.getElementById('canvas1')
 
@@ -218,9 +218,9 @@ mainAudio.addEventListener('ended', () => {
 moreMusicBtn.addEventListener('click', () => {
 	musicList.classList.toggle('show')
 })
-closeMoreMusic.addEventListener('click', () => {
-	moreMusicBtn.click()
-})
+// closeMoreMusic.addEventListener('click', () => {
+// 	moreMusicBtn.click()
+// })
 
 const ulTag = wrapper.querySelector('ul')
 // let create li tags according to array length for list
