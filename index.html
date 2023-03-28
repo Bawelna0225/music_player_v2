@@ -11,31 +11,6 @@
 	</head>
 	<body>
 		<section class="wrapper">
-			<div class="img">
-                <img src="" alt="">
-            </div>
-			<div class="details">
-                <p class="name">Song name</p>
-				<p class="artist">Artist name</p>
-            </div>
-			<div class="progress-area">
-				<div class="progress-bar">
-					<audio src="" id="main-audio"></audio>
-				</div>
-				<div class="song-timer">
-					<span class="current-time">0:00</span>
-					<span class="max-duration">0:00</span>
-				</div>
-			</div>
-			<div class="controls">
-				<i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-				<i id="prev" class="material-icons">skip_previous</i>
-				<div class="play-pause">
-					<i class="material-icons play">play_arrow</i>
-				</div>
-				<i id="next" class="material-icons">skip_next</i>
-				<i id="more-music" class="material-icons">queue_music</i>
-			</div>
 			<div class="music-list">
 				<div class="header">
 					<div class="row">
@@ -48,9 +23,35 @@
 					<!-- here li list are coming from js -->
 				</ul>
 			</div>
+			<div class="right-panel">
+				<div class="img">
+					<img src="https://picsum.photos/300" alt="" />
+				</div>
+				<div class="details">
+					<p class="name">Song name</p>
+					<p class="artist">Artist name</p>
+				</div>
+				<div class="song-timer">
+					<span class="current-time">0:00</span>
+					<span class="max-duration">0:00</span>
+				</div>
+				<div class="progress-area">
+					<div class="progress-bar">
+						<audio src="" id="main-audio"></audio>
+					</div>
+				</div>
+				<div class="controls">
+					<i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+					<i id="prev" class="material-icons">skip_previous</i>
+					<div class="play-pause">
+						<i class="material-icons play">play_arrow</i>
+					</div>
+					<i id="next" class="material-icons">skip_next</i>
+				</div>
+			</div>
 		</section>
-        <section id="container">
-            <canvas id="canvas1"></canvas>
-        </section>
+		<section id="container">
+			<canvas id="canvas1"></canvas>
+		</section>
 	</body>
 </html>
