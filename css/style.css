@@ -116,7 +116,7 @@ i {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  min-width: 450px;
+  min-width: 50px;
 }
 .wrapper .music-list .header {
   display: flex;

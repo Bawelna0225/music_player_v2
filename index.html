@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<script src="js/songs.js" defer></script>
 		<script src="js/main.js" defer></script>
 		<title>Music Player with Audio Visualizer</title>
 	</head>
@@ -14,7 +15,7 @@
 			<div class="music-list">
 				<div class="header">
 					<div class="row">
-						<i class="list material-icons">queue_music</i>
+						<i class="list material-icons" id="more-music">queue_music</i>
 						<span>Music list</span>
 					</div>
 					<i id="close" class="material-icons">close</i>
@@ -25,7 +26,7 @@
 			</div>
 			<div class="right-panel">
 				<div class="img">
-					<img src="https://picsum.photos/300" alt="" />
+					<img src="" alt="" />
 				</div>
 				<div class="details">
 					<p class="name">Song name</p>
