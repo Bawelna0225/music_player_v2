@@ -65,11 +65,12 @@ function playMusic() {
 			for (let i = 0; i < bufferLength; i++) {
 				barHeight = dataArray[i] * 1.5
 
-				const red = 250 * (i / bufferLength)
-				const green = 0
-				const blue = barHeight + 0.2 * (i / bufferLength)
+				// const red = 250 * (i / bufferLength)
+				// const green = 0
+				// const blue = barHeight + 0.2 * (i / bufferLength)
 
-				ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')'
+				// ctx.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')'
+				ctx.fillStyle = `hsl(0,0%,${(50 * i) / bufferLength}%)`
 				ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight)
 
 				x += barWidth + 1
@@ -286,11 +287,4 @@ function clicked(element) {
 	loadMusic(musicIndex)
 	playMusic()
 	playingSong()
-}
-
-//minimalize on click
-const minimalizeBtn = document.querySelector('.minimalize')
-minimalizeBtn.onclick = () => {
-	wrapper.classList.toggle('minimalized')
-	wrapper.classList.contains('minimalized') ? (minimalizeBtn.innerText = 'expand_less') : (minimalizeBtn.innerText = 'expand_more')
 }

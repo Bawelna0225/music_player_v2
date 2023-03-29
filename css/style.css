@@ -86,7 +86,7 @@ i {
   position: relative;
   border-radius: inherit;
   background: rgb(45, 45, 144);
-  background-image: linear-gradient(90deg, rgb(26, 26, 179), rgb(176, 33, 33));
+  background-image: linear-gradient(90deg, rgb(19, 19, 19) 20%, rgb(100, 100, 100), rgb(187, 187, 187));
 }
 .wrapper .progress-area .progress-bar::before {
   content: "";
@@ -100,7 +100,7 @@ i {
   opacity: 0;
   pointer-events: none;
   transform: translateY(-50%);
-  background: rgb(176, 33, 33);
+  background: white;
   transition: opacity 0.2s ease;
 }
 .wrapper .progress-area:hover .progress-bar::before {
@@ -205,6 +205,47 @@ i {
   width: 100vw;
 }
 
+.paused .playing-anim .bar__1 {
+  width: 5px;
+  height: 100%;
+  -webkit-animation: volume 0.3s linear infinite alternate;
+          animation: volume 0.3s linear infinite alternate;
+}
+.paused .playing-anim .bar__2 {
+  width: 5px;
+  height: 100%;
+  -webkit-animation: volume 0.3s linear infinite alternate;
+          animation: volume 0.3s linear infinite alternate;
+}
+.paused .playing-anim .bar__3 {
+  width: 5px;
+  height: 100%;
+  -webkit-animation: volume 0.3s linear infinite alternate;
+          animation: volume 0.3s linear infinite alternate;
+}
+.paused .playing-anim .bar__4 {
+  width: 5px;
+  height: 100%;
+  -webkit-animation: volume 0.3s linear infinite alternate;
+          animation: volume 0.3s linear infinite alternate;
+}
+.paused .playing-anim .bar__1 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.paused .playing-anim .bar__2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.paused .playing-anim .bar__3 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.paused .playing-anim .bar__4 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
 .playing-anim {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -216,7 +257,7 @@ i {
   justify-content: space-evenly;
   align-items: flex-end;
   gap: 2px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .playing-anim .bar__1 {
   width: 5px;
@@ -237,47 +278,6 @@ i {
   width: 5px;
   height: 100%;
   background-color: white;
-}
-
-.playing-anim .bar__1 {
-  width: 5px;
-  height: 100%;
-  -webkit-animation: volume 0.3s linear infinite alternate;
-          animation: volume 0.3s linear infinite alternate;
-}
-.playing-anim .bar__2 {
-  width: 5px;
-  height: 100%;
-  -webkit-animation: volume 0.3s linear infinite alternate;
-          animation: volume 0.3s linear infinite alternate;
-}
-.playing-anim .bar__3 {
-  width: 5px;
-  height: 100%;
-  -webkit-animation: volume 0.3s linear infinite alternate;
-          animation: volume 0.3s linear infinite alternate;
-}
-.playing-anim .bar__4 {
-  width: 5px;
-  height: 100%;
-  -webkit-animation: volume 0.3s linear infinite alternate;
-          animation: volume 0.3s linear infinite alternate;
-}
-.playing-anim .bar__1 {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-.playing-anim .bar__2 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-.playing-anim .bar__3 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-.playing-anim .bar__4 {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
 }
 
 @-webkit-keyframes volume {
