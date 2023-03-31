@@ -303,7 +303,7 @@ i {
     flex-direction: column-reverse;
     gap: 10px;
     padding-block: 20px;
-    justify-content: start;
+    justify-content: center;
   }
   .wrapper .right-panel {
     transform: skewY(0deg);
@@ -315,5 +315,10 @@ i {
   .wrapper .music-list {
     transform: skewY(0deg);
     width: min(100vw - 1rem, 450px) !important;
+  }
+}
+@media (height < 800px) {
+  .wrapper {
+    justify-content: start;
   }
 }/*# sourceMappingURL=style.css.map */

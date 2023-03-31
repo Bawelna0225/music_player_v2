@@ -308,7 +308,7 @@ i {
 		flex-direction: column-reverse;
 		gap: 10px;
 		padding-block: 20px;
-		justify-content: start;
+		justify-content: center;
 		.right-panel {
 			transform: skewY(0deg);
 			width: min(calc(100vw - 1rem), 450px) !important;
@@ -320,5 +320,10 @@ i {
 			transform: skewY(0deg);
 			width: min(calc(100vw - 1rem), 450px) !important;
 		}
+	}
+}
+@media (height < 800px) {
+	.wrapper {
+		justify-content: start;
 	}
 }
