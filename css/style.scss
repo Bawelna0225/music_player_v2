@@ -66,6 +66,7 @@ i {
 	user-select: none;
 }
 .wrapper {
+	min-height: 100vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -169,7 +170,7 @@ i {
 		padding: 15px;
 		gap: 20px;
 		height: fit-content;
-		min-width: 450px;
+		width: 450px;
 
 		::-webkit-scrollbar {
 			width: 4px;
@@ -299,5 +300,25 @@ i {
 	}
 	100% {
 		height: 25px;
+	}
+}
+
+@media (width < 1000px) {
+	.wrapper {
+		flex-direction: column-reverse;
+		gap: 10px;
+		padding-block: 20px;
+		justify-content: start;
+		.right-panel {
+			transform: skewY(0deg);
+			width: min(calc(100vw - 1rem), 450px) !important;
+			.img, .details, .controls {
+				width: 100%;
+			}
+		}
+		.music-list {
+			transform: skewY(0deg);
+			width: min(calc(100vw - 1rem), 450px) !important;
+		}
 	}
 }
